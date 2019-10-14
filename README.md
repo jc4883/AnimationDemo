@@ -1,17 +1,17 @@
 # AnimationDemo
 
 Background 
-	- I wanted to practice CSS animations and learn how to embed them to my websites.
+  - I wanted to practice CSS animations and learn how to embed them to my websites.
 
 MVP	
-	- showcase CSS skills through 3 unique examples: a dropdown menu, hover effect, and scroll effect.
+  - showcase CSS skills through 3 unique examples: a dropdown menu, hover effect, and scroll effect.
   
 Wireframe
-	- https://wireframe.cc/FUupyO
+  - https://wireframe.cc/FUupyO
   
 Technologies 
-	- vanilla javascript, CSS, html
-	- three.js
+  - vanilla javascript, CSS, html
+  - three.js
  
 Possible Pitfalls
   - I suspect that I may run into some trouble embedding three js onto the webpage.
