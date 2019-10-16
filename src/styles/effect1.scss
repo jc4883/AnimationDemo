@@ -1,0 +1,162 @@
+#effect-1 {
+
+
+    @keyframes menu1 {
+        from {
+            transform: rotateY(-90deg) translateY(-30px) translateZ(-60px);
+            opacity: 0;
+        }
+        to {
+            transform: none;
+            opacity: 1;
+        }
+    }
+
+    @keyframes menu2 {
+        0% {
+            transform: rotateX(-90deg);
+            opacity: 0;
+        }
+
+        70% {
+            transform: rotateX(40deg);
+        }
+        100% {
+            transform: none;
+            opacity: 1;
+        }
+    }
+
+    @keyframes menu3 {
+        0% {
+            transform: scale(0.3) translateY(-30px);
+            opacity: 0;
+        }
+
+        70% {
+            transform: scale(1.2) translateY(10px);
+        }
+        100% {
+            transform: none;
+            opacity: 1;
+        }
+    }
+
+
+    @keyframes menu4 {
+        0% {
+            transform: rotateY(-180deg) skew(30deg, 30deg);
+            opacity: 0;
+        }
+
+        100%{
+            transform: none;
+            opacity: 1;
+        }
+    }
+
+
+    /* when hovering over any of the li's */
+
+
+    ul.dropdown-menu li {
+        display: none;
+    }
+
+    li:hover > ul.dropdown-menu.menu-one {
+        perspective: 1000px;
+        transform-origin: top;
+        li {
+            background-image: linear-gradient(to bottom, yellow, red);
+            display: block;
+            opacity: 0;
+            @for $i from 1 through 6 {
+                &:nth-child(#{$i}) {
+                    animation: {
+                        name: menu1;
+                        duration: .2s;
+                        delay: (130ms * $i) - 130;
+                        fill-mode: forwards;
+                    }    
+                }   
+            }          
+        }
+    }
+
+
+
+    li:hover > ul.dropdown-menu.menu-two {
+        perspective: 1000px;
+
+        li {
+            background-image: linear-gradient(to bottom, yellow, red);
+            display: block;
+            opacity: 0;
+            @for $i from 1 through 6 {
+                &:nth-child(#{$i}) {
+                    animation: {
+                        name: menu2;
+                        duration: .2s;
+                        delay: (130ms * $i) - 130;
+                        fill-mode: forwards;
+                        timing-function: ease-out;
+                    }    
+                }   
+            }          
+        }
+    }
+
+    li:hover > ul.dropdown-menu.menu-three {
+        perspective: 1000px;
+
+        li {
+            background-image: linear-gradient(to bottom, yellow, red);
+            display: block;
+            opacity: 0;
+            @for $i from 1 through 6 {
+                &:nth-child(#{$i}) {
+                    animation: {
+                        name: menu3;
+                        duration: .2s;
+                        delay: (130ms * $i) - 130;
+                        fill-mode: forwards;
+                        timing-function: ease-out;
+                    }    
+                }   
+            }          
+        }
+    }
+    li:hover > ul.dropdown-menu.menu-four {
+        perspective: 1000px;
+        li {
+            background-image: linear-gradient(to bottom, yellow, red);
+            display: block;
+            opacity: 0;
+            @for $i from 1 through 6 {
+                &:nth-child(#{$i}) {
+                    animation: {
+                        name: menu4;
+                        duration: .2s;
+                        delay: (130ms * $i) - 130;
+                        fill-mode: forwards;
+                        timing-function: ease-out;
+                    }    
+                }   
+            }          
+        }
+    }
+    
+}
+
+.remove-left-border-radius {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    transition: 1s;
+}
+
+.remove-right-border-radius {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    transition: 1s;
+}
+
