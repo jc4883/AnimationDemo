@@ -2,6 +2,18 @@ export const effect1 = () => {
     //document.getElementById('effect-1').appendChild = "Effect 1!";    
     const menu1 = document.querySelector(" #dropdown-tab-one, .menu-one li");
     const menu4 = document.querySelector("#dropdown-tab-four, .menu-four li");
+    const scrollEffect = document.getElementById("scroll-effect");
+    const effect1 = document.getElementById("effect-1");
+
+
+    scrollEffect.addEventListener("scroll", (e) => {
+        if (e.target.scrollTop > 470) {
+            effect1.classList.add("fixed");
+        } else {
+            effect1.classList.remove("fixed");
+        }
+    })
+
 
     menu1.addEventListener("mouseover", () => {
         document.getElementById("effect-1").classList.add("remove-left-border-radius");
@@ -16,4 +28,6 @@ export const effect1 = () => {
     menu4.addEventListener("mouseout", () => {
         document.getElementById("effect-1").classList.remove("remove-right-border-radius");
     })
+
+    
 }
