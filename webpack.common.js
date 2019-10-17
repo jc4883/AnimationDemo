@@ -13,6 +13,7 @@ module.exports = {
         extensions: [".js"] // if we were using React.js, we would include ".jsx"
     },
     module: {
+
         rules: [{
                 test: /\.js$/, // if we were using React.js, we would use \.jsx?$/
                 use: {
@@ -53,6 +54,16 @@ module.exports = {
                     "sass-loader",
                     "postcss-loader"
                 ]
+            },
+            {
+                test: /\.(png|jp(e*)g|svg)$/,  
+                use: [{
+                    loader: 'url-loader',
+                    options: { 
+                        limit: 8000, // Convert images < 8kb to base64 strings
+                        name: 'images/[hash]-[name].[ext]'
+                    } 
+                }]
             }
         ]
     },

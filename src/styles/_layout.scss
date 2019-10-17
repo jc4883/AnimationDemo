@@ -1,5 +1,31 @@
-#effect-1 {
+body {
+    overflow: hidden;
+    > nav {
+        height: 60px;
+        background-color: white;
+        display: flex;
+        font-family: Nunito Sans,Avenir,Helvetica,Arial,sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        align-items: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: 1px solid lightgrey;
+        border-top: none;
+        justify-content: space-between;
+        > h1 {
+            margin-left: 20px;
+        }
+        > h2 {
+            margin-right: 20px;
+            font-weight: 100;
+            font-size: 23px;
+        }
+    }
+}
 
+#effect-1 {
     display: inline-block;
     height: 40px;
     background-color: hsl(1, 98%, 50%);
@@ -53,7 +79,6 @@
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
         }
-    }
-
-    
+    }   
 }
+

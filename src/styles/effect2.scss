@@ -1,3 +1,171 @@
 #effect-2 {
-    
+
+    @keyframes enlargeImage {
+        0% {
+            transform: none;
+            border-radius: 10px;
+        }
+
+        20%{
+            transform: scale(.15) rotateZ(-360deg);
+            border-radius: 500px;
+        }
+
+        85% {
+            border-radius: 10px;
+            transform: scale(2.2) rotateZ(0deg);
+        }
+        100% {
+            transform: scale(2);
+            border-radius: 10px;
+        }
+    }
+
+    @keyframes animateBorder {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        50% { 
+            background-position: 300% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        grid-gap: 10px;
+        width: 885px;
+        grid-template-areas: 
+            "photo1 photo2 photo3 photo4"
+            "photo5 presentation presentation photo6"
+            "photo7 presentation presentation photo8"
+            "photo9 photo10 photo11 photo12";
+        > div {
+            width: 210px;
+            height: 210px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            z-index: 2;
+        }
+
+        > div:hover {
+            z-index: 3;
+            animation: {
+                name: enlargeImage;
+                duration: 1s;
+                timing-function: ease-in-out;
+                delay: .2s;
+                fill-mode: forwards;
+            }
+        }
+
+        #grid-cell-1 {
+            grid-area: photo1;
+            background-image: url("/src/assets/astro_salute.jpg"); 
+        }
+        #grid-cell-2 {
+            grid-area: photo2;
+            background-image: url("/src/assets/california.jpg");
+        }
+
+        #grid-cell-3 {
+            grid-area: photo3;
+            background-image: url("/src/assets/cat.jpg");
+        }
+        
+        #grid-cell-4 {
+            grid-area: photo4;
+            background-image: url("/src/assets/cool_shirt.jpg");
+        }
+        #grid-cell-5 {
+            grid-area: photo5;
+            background-image: url("/src/assets/pray.jpg");
+        }
+        #grid-cell-6 {
+            grid-area: photo6;
+            background-image: url("/src/assets/ernst_and_young.jpg");
+        }
+        #grid-cell-7 {
+            grid-area: photo7;
+            background-image: url("/src/assets/korean_jigu.jpg");
+        }
+        #grid-cell-8 {
+            grid-area: photo8;
+            background-image: url("/src/assets/lonely_boi.jpg");
+        }
+        #grid-cell-9 {
+            grid-area: photo9;
+            background-image: url("/src/assets/mom_plant_baby.jpg");
+        }
+        #grid-cell-10 {
+            grid-area: photo10;
+            background-image: url("/src/assets/wind_turbine.jpg");            
+        }
+        #grid-cell-11 {
+            grid-area: photo11;
+            background-image: url("/src/assets/nyc_night.jpg");
+        }
+        #grid-cell-12 {
+            grid-area: photo12;
+            background-image: url("/src/assets/owl.jpg");
+        }
+
+
+
+
+
+        #presentation-cell-blur {
+            grid-area: presentation;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, yellow 0%, #81A158 25%, red 50%, #16D024 75%, darkblue 100%);
+            background-size: 400%;
+            animation: animateBorder 20s linear infinite;
+            filter: blur(20px);
+            z-index: 0;
+        }
+
+        #presentation-cell-border {
+            grid-area: presentation;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        #presentation-cell {
+            z-index: 1;
+            width: 98%;
+            height: 98%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background: linear-gradient(to bottom, #272627 0%, #020102 100%);
+            > p {
+                font-size: 22px;
+                background-color: none;
+                font-family: 'Oswald', sans-serif;
+                font-weight: 600;
+            }
+        }
+
+        #presentation-cell-border:hover {
+            animation: none;
+        }
+
+    }
 }
+

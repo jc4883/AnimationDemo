@@ -16,6 +16,4 @@ export const effect1 = () => {
     menu4.addEventListener("mouseout", () => {
         document.getElementById("effect-1").classList.remove("remove-right-border-radius");
     })
-
-
 }
