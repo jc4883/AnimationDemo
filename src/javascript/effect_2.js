@@ -60,5 +60,10 @@ export const effect2 = () => {
             presentationBox.classList.remove("present-image");
         })
     }
+
+
+
+        
+
     
 }

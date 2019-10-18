@@ -29,5 +29,4 @@ export const effect1 = () => {
         document.getElementById("effect-1").classList.remove("remove-right-border-radius");
     })
 
-    
 }
