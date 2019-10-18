@@ -3,7 +3,8 @@ export const effect2 = () => {
     const elements = document.querySelectorAll(".grid-wrapper > section");
     const presentationBox = document.querySelector(".image-div");
     
-    for (let i = 0; i < elements.length - 1; i++) {
+    for (let i = 0; i < elements.length - 2; i++) {
+        debugger
         elements[i].addEventListener("mouseover", (event) => {
             let url;
             switch (i) {

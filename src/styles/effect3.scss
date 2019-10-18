@@ -1,3 +1,140 @@
-#effect-3 {
+$font-family: Nunito Sans,Avenir,Helvetica,Arial,sans-serif;
+$font-size: 20px;
+$letter-spacing: 2px;
+
+@keyframes lightUpSection {
+    from {
+        background-color: white;
+    }
+    10% {
+        background-color: white;
+    }
+    to {
+        background-color: black;
+    }
+}
+
+@keyframes decaySection {
 
 }
+
+.light-up-section {
+    animation: {
+        name: lightUpSection;
+        duration: 5s;
+        delay: 1s;
+        timing-function: ease-out;
+        fill-mode: forwards;
+    }
+}
+
+#effect-3 {
+    @keyframes moveHamburger {
+        from {
+            transform: none;
+        }
+        to {
+            transform: translateX(60px)
+        }
+    }
+
+    .main-nav {
+        width: 100%;
+        > ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            list-style: none;
+            text-align: center;
+            font-family: Nunito Sans, Avenir, Helvetica, Arial, sans-serif;
+            font-size: 20px;
+            letter-spacing: 2px;
+            grid-gap: 20px;
+            color: white;
+            padding: 0 10px;
+            margin: 0;
+            position: relative;
+            top: 7vh;
+            > li {
+                width: 100%;
+                background-color: #fc2602;
+                border-radius: 5px;
+                box-shadow: 4px 4px 4px black;
+            }
+            > li:hover {
+                background-color: #ff7c66;
+                transform: translateY(-10px);
+                transition: .2s;
+            }
+        }
+        > img {
+            display: none;
+        }
+    }
+
+    .move-hamburger {
+        animation: {
+            name: moveHamburger;
+            duration: 1s;
+            fill-mode: forwards;
+        }
+    }
+    
+
+
+
+
+    @media(max-width: 800px) {
+        .main-nav {
+            > ul {
+                display: none;
+            }
+            > img {
+                display: block;
+                width: 30px;
+                height: 30px;
+                /* margin-top: 10vh; */
+                position: relative;
+                top: 7vh;
+                float: right;
+                right: 2vh;
+            }
+        }
+    }
+}
+
+/* Nav Bar example code https://www.youtube.com/watch?v=jGks-v42YRA */
+
+
+
+
+.body {
+    font-family: $font-family;
+    font-size: 12px;
+    perspective-origin: 0% 50%;
+    perspective: 800px;
+    background: orangered;
+
+    nav, .main {
+        transition: transform 150ms ease-out;
+    }
+
+    nav {
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 16em;
+        background-color: burlywood;
+        transform: translateX(-16em);
+        
+    }
+}
+
+
+
+
+
+
+
+

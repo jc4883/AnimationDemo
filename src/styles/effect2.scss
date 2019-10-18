@@ -95,7 +95,7 @@
             transform: rotate(360deg);
         }
 */
-    .grid-wrapper {
+    .grid-wrapper-effect2 {
         display: grid;
         grid-template-columns: repeat(4, 1fr); 
         grid-template-rows: repeat(4, 1fr);
@@ -313,11 +313,6 @@
                 fill-mode: forwards;
             }
         }
-
-        #presentation-cell:hover {
-            animation: none !important;
-        }
-
     }
 }
 
