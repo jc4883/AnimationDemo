@@ -50,8 +50,13 @@ body {
             /* temporary solution to fix width not 100%*/
             background-color: lightblue;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
+            .effect1-lead-container {
+                padding-top: 70px;
+            }
         }
         &:nth-of-type(2) {
             /* temporary solution to fix width not 100%*/
