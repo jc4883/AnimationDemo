@@ -1,7 +1,7 @@
 export const effect1 = () => {
     //document.getElementById('effect-1').appendChild = "Effect 1!";    
-    const menu1 = document.querySelector(" #dropdown-tab-one, .menu-one li");
-    const menu4 = document.querySelector("#dropdown-tab-four, .menu-four li");
+    const menu1 = document.querySelector(" #drpdwn-tab-one, .menu-one li");
+    const menu4 = document.querySelector("#drpdwn-tab-four, .menu-four li");
     const scrollEffect = document.getElementById("scroll-effect");
     const effect1 = document.getElementById("effect-1");
 
@@ -16,6 +16,7 @@ export const effect1 = () => {
 
 
     menu1.addEventListener("mouseover", () => {
+        debugger
         document.getElementById("effect-1").classList.add("remove-left-border-radius");
     })
     menu1.addEventListener("mouseout", () => {

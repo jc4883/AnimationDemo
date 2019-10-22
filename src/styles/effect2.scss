@@ -267,7 +267,7 @@
             background: linear-gradient(45deg, yellow 0%, #81A158 25%, red 50%, #16D024 75%, darkblue 100%);
             background-size: 400%;
             animation: animateBorder 20s linear infinite;
-            filter: blur(20px);
+            filter: blur(40px);
             z-index: 0;
         }
 
@@ -292,6 +292,8 @@
             border-radius: 10px;
             background: linear-gradient(to bottom, #272627 0%, #020102 100%);
             > p {
+                color: white;
+                text-shadow: 3px lightgrey solid;
                 font-size: 22px;
                 background-color: none;
                 font-family: 'Oswald', sans-serif;
