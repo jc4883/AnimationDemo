@@ -22,15 +22,13 @@ $bg-color: red;
         }
     }
 
-    .card.mb-4 {
-        background-size: cover;
-        background-position: center;
-        background-repeat: "no-repeat";
-        .first-card {
-            background-image: url("/src/assets/lonely_boi.jpg");
-        }
-        .second-card {
-            background-image: url("/src/assets/korean_jigu.jpg");
-        }
+    #here1 {
+        background-color: blue;
     }
+
+    #here2 {
+        background-color: red;
+    }
+
 }
+
