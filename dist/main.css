@@ -49,7 +49,7 @@ body {
       background-color: lightpink; }
     #scroll-effect > .scroll-point:nth-of-type(3) {
       /* temporary solution to fix width not 100%*/
-      margin-left: 6px;
+      /* margin-left: 6px; */
       /* temporary solution to fix width not 100%*/
       /* background-color: lightgreen; */ }
 

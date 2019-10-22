@@ -1,10 +1,9 @@
 export const effect2 = () => {
     // document.getElementById('effect-2').innerText = "Effect 2!";  
-    const elements = document.querySelectorAll(".grid-wrapper > section");
+    const elements = document.querySelectorAll(".grid-wrapper-effect2 > section");
     const presentationBox = document.querySelector(".image-div");
     
     for (let i = 0; i < elements.length - 2; i++) {
-        debugger
         elements[i].addEventListener("mouseover", (event) => {
             let url;
             switch (i) {
@@ -57,6 +56,7 @@ export const effect2 = () => {
             }
         })
         elements[i].addEventListener("mouseleave", (event) => {
+            presentationBox.style.backgroundImage = "none";
             presentationBox.classList.remove("present-image");
         })
     }

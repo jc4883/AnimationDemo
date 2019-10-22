@@ -2,7 +2,7 @@
     
     display: flex;
     justify-content: center;
-
+    padding-top: 23px;
     @keyframes enlargeImage {
         0% {
             
@@ -103,7 +103,6 @@
         grid-gap: 10px;
         height: 90vh;
         width: 90vh;
-        padding-top: 58px;
         grid-template-areas: 
             "photo1 photo2 photo3 photo4"
             "photo5 presentation presentation photo6"
@@ -132,20 +131,25 @@
             border-radius: 10px;
             -moz-border-radius: 10px;
             z-index: 2;
+            display: flex;
             position: relative;
+            align-items: center;
+            justify-content: center;
             background: linear-gradient(to bottom, #272627 0%, #020102 100%);
             > h1 {
                 z-index: -1;
+                
                 position: absolute;
                 top: 48px;
-                left: 67px;
+                
                 color: white;
             }
             > img {
                 z-index: -1;
+                
                 position: absolute;
                 top: 101px;
-                left: 81px;
+                
                 width: 40px;
                 height: 40px;
             }
@@ -314,5 +318,6 @@
             }
         }
     }
+
 }
 

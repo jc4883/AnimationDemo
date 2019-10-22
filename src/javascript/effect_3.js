@@ -25,7 +25,7 @@ export const effect3 = () => {
     hamburger.addEventListener("mouseout", () => {
         nav.classList.remove("menu-hover");
         main.classList.remove("menu-hover");
-        debugger
+        
     })
 }
 

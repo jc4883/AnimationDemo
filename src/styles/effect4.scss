@@ -1,0 +1,36 @@
+
+
+$theme-colors: (
+    "primary": #d95700
+);
+
+$bg-color: red;
+
+#effect-4 {
+    /*
+    height: 200vh !important;
+    box-sizing: content-box;
+    > .jumbotron {
+        background-color: #ededed;
+        border-top: 3px solid rgb(219, 219, 219);
+    }
+    */
+    .form-inline.d-inline {
+        width: 80%;
+        > input {
+            width: 89%;
+        }
+    }
+
+    .card.mb-4 {
+        background-size: cover;
+        background-position: center;
+        background-repeat: "no-repeat";
+        .first-card {
+            background-image: url("/src/assets/lonely_boi.jpg");
+        }
+        .second-card {
+            background-image: url("/src/assets/korean_jigu.jpg");
+        }
+    }
+}

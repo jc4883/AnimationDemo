@@ -1,4 +1,6 @@
 body {
+    box-sizing: content-box;
+    margin: 0;
     overflow: hidden;
     .header {
         position: sticky;
@@ -21,6 +23,8 @@ body {
         justify-content: space-between;
         > h1 {
             margin-left: 20px;
+            margin-bottom: 0;
+            font-size: 2rem;
         }
         > h2 {
             margin-right: 20px;
@@ -39,10 +43,10 @@ body {
     
     > .scroll-point {
         scroll-snap-align: start;
-        height: 100vh;
+        height: 98vh;
         &:nth-of-type(1) {
             /* temporary solution to fix width not 100%*/
-            margin-left: 6px;
+            /* margin-left: 6px; */
             /* temporary solution to fix width not 100%*/
             background-color: lightblue;
             display: flex;
@@ -51,13 +55,13 @@ body {
         }
         &:nth-of-type(2) {
             /* temporary solution to fix width not 100%*/
-            margin-left: 6px;
+            /* margin-left: 6px; */
             /* temporary solution to fix width not 100%*/
             background-color: lightpink;
         }
         &:nth-of-type(3) {
             /* temporary solution to fix width not 100%*/
-            margin-left: 6px;
+            /*margin-left: 6px; */
             /* temporary solution to fix width not 100%*/
             /* background-color: lightgreen; */
         }
