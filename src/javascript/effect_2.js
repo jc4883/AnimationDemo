@@ -8,40 +8,40 @@ export const effect2 = () => {
             let url;
             switch (i) {
                 case 0:
-                    url = "/src/assets/astro_salute.jpg";
+                    url = "https://github.com/jc4883/AnimationDemo/blob/master/src/assets/astro_salute.jpg?raw=true";
                     break;
                 case 1:
-                    url = "/src/assets/california.jpg";
+                    url = "https://github.com/jc4883/AnimationDemo/blob/master/src/assets/california.jpg?raw=true";
                     break;
                 case 2:
-                    url = "/src/assets/cat.jpg";
+                    url = "https://github.com/jc4883/AnimationDemo/blob/master/src/assets/cat.jpg?raw=true";
                     break;
                 case 3:
-                    url = "/src/assets/cool_shirt.jpg";
+                    url = "https://github.com/jc4883/AnimationDemo/blob/master/src/assets/cool_shirt.jpg?raw=true";
                     break;
                 case 4:
-                    url = "/src/assets/pray.jpg";
+                    url = "https://github.com/jc4883/AnimationDemo/blob/master/src/assets/pray.jpg?raw=true";
                     break;
                 case 5:
-                    url = "/src/assets/ernst_and_young.jpg";
+                    url = "https://github.com/jc4883/AnimationDemo/blob/master/src/assets/ernst_and_young.jpg?raw=true";
                     break;
                 case 6:
-                    url = "/src/assets/korean_jigu.jpg";
+                    url = "https://github.com/jc4883/AnimationDemo/blob/master/src/assets/korean_jigu.jpg?raw=true";
                     break;
                 case 7:
-                    url = "/src/assets/lonely_boi.jpg";
+                    url = "https://github.com/jc4883/AnimationDemo/blob/master/src/assets/lonely_boi.jpg?raw=true";
                     break;
                 case 8:
-                    url = "/src/assets/mom_plant_baby.jpg"; 
+                    url = "https://github.com/jc4883/AnimationDemo/blob/master/src/assets/mom_plant_baby.jpg?raw=true"; 
                     break;
                 case 9:
-                    url = "/src/assets/wind_turbine.jpg";
+                    url = "https://github.com/jc4883/AnimationDemo/blob/master/src/assets/wind_turbine.jpg?raw=true";
                     break;
                 case 10:
-                    url = "/src/assets/nyc_night.jpg";
+                    url = "https://github.com/jc4883/AnimationDemo/blob/master/src/assets/nyc_night.jpg?raw=true";
                     break;
                 case 11:
-                    url = "/src/assets/owl.jpg";
+                    url = "https://github.com/jc4883/AnimationDemo/blob/master/src/assets/owl.jpg?raw=true";
                     break;
                 default:
                     url = "none";

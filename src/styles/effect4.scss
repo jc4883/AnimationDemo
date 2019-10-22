@@ -23,3 +23,9 @@ $bg-color: red;
     }
 }
 
+@media(max-width: 770px) {
+    #effect-4 {
+        height: 350vh !important;
+    }
+}
+

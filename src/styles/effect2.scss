@@ -138,10 +138,14 @@
             background: linear-gradient(to bottom, #272627 0%, #020102 100%);
             > h1 {
                 z-index: -1;
-                
                 position: absolute;
                 top: 48px;
-                
+                left: 0 !important;
+                width: 100%;
+                font-family: Nunito Sans,Avenir,Helvetica,Arial,sans-serif;
+                font-size: 20px;
+                font-weight: 900;
+                letter-spacing: 2px;
                 color: white;
             }
             > img {
@@ -207,51 +211,51 @@
         }
         #grid-cell-1 {
             grid-area: photo1;
-            background-image: url("../assets/astro_salute.jpg");
+            background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/astro_salute.jpg?raw=true");
         }
         #grid-cell-2 {
             grid-area: photo2;
-            background-image: url("/src/assets/california.jpg");
+            background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/california.jpg?raw=true");
         }
         #grid-cell-3 {
             grid-area: photo3;
-            background-image: url("/src/assets/cat.jpg");
+            background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/cat.jpg?raw=true");
         }
         #grid-cell-4 {
             grid-area: photo4;
-            background-image: url("/src/assets/cool_shirt.jpg");
+            background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/cool_shirt.jpg?raw=true");
         }
         #grid-cell-5 {
             grid-area: photo5;
-            background-image: url("/src/assets/pray.jpg");
+            background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/pray.jpg?raw=true");
         }
         #grid-cell-6 {
             grid-area: photo6;
-            background-image: url("/src/assets/ernst_and_young.jpg");
+            background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/ernst_and_young.jpg?raw=true");
         }
         #grid-cell-7 {
             grid-area: photo7;
-            background-image: url("/src/assets/korean_jigu.jpg");
+            background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/korean_jigu.jpg?raw=true");
         }
         #grid-cell-8 {
             grid-area: photo8;
-            background-image: url("/src/assets/lonely_boi.jpg");
+            background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/lonely_boi.jpg?raw=true");
         }
         #grid-cell-9 {
             grid-area: photo9;
-            background-image: url("/src/assets/mom_plant_baby.jpg");
+            background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/mom_plant_baby.jpg?raw=true");
         }
         #grid-cell-10 {
             grid-area: photo10;
-            background-image: url("/src/assets/wind_turbine.jpg");            
+            background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/wind_turbine.jpg?raw=true");            
         }
         #grid-cell-11 {
             grid-area: photo11;
-            background-image: url("/src/assets/nyc_night.jpg");
+            background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/nyc_night.jpg?raw=true");
         }
         #grid-cell-12 {
             grid-area: photo12;
-            background-image: url("/src/assets/owl.jpg");
+            background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/owl.jpg?raw=true");
         }
 
 
