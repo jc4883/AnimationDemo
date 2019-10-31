@@ -66,11 +66,13 @@
             border-radius: 0;
             opacity: 1;
             transform: scale(1.15) rotate(368deg);
+
         }
         100% {
             border-radius: 10px;
             opacity: 1;
             transform: rotate(360deg);
+
         }
     }
 
@@ -143,13 +145,14 @@
                 color: white;
             }
             > img {
+                left: 0;
                 z-index: -1;
-                
                 position: absolute;
-                top: 101px;
-                
                 width: 40px;
                 height: 40px;
+                top: 56%;
+                right: 0;
+                margin: 0 auto;
             }
         }
 
@@ -376,6 +379,8 @@
             z-index: 1;
             position: relative;
         }
+
+
 
         #presentation-cell {
             z-index: 1;

@@ -4,7 +4,6 @@ export const effect2 = () => {
     const images = document.querySelectorAll(".grid-wrapper-effect2 > section > div");
     const presentationBox = document.querySelector(".image-div");
     const beds = document.querySelectorAll(".bed");
-    debugger
     for (let i = 0; i < elements.length; i++) {
         elements[i].addEventListener("mouseover", (event) => {
             event.target.style.backgroundColor = "black";
@@ -53,7 +52,9 @@ export const effect2 = () => {
 
             images[i].classList.add("enlarge-image");
             beds[i].classList.add("z-index-up");
-
+            window.setTimeout(() => {
+                beds[i].classList.remove("z-index-up");
+            }, (1500));
             presentationBox.classList.add("present-image");
             if (!presentationBox.style.backgroundImage) {
                 presentationBox.style.backgroundImage = `url('${url}')`;
