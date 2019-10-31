@@ -1,10 +1,14 @@
 export const effect2 = () => {
     // document.getElementById('effect-2').innerText = "Effect 2!";  
-    const elements = document.querySelectorAll(".grid-wrapper-effect2 > section");
+    const elements = document.querySelectorAll(".invisible-1, .invisible-2, .invisible-3, .invisible-4, .invisible-5, .invisible-6, .invisible-7, .invisible-8, .invisible-9, .invisible-10, .invisible-11, .invisible-12");
+    const images = document.querySelectorAll(".grid-wrapper-effect2 > section > div");
     const presentationBox = document.querySelector(".image-div");
-    
-    for (let i = 0; i < elements.length - 2; i++) {
+    const beds = document.querySelectorAll(".bed");
+    debugger
+    for (let i = 0; i < elements.length; i++) {
         elements[i].addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "black";
+            console.log("here")
             let url;
             switch (i) {
                 case 0:
@@ -44,26 +48,26 @@ export const effect2 = () => {
                     url = "https://github.com/jc4883/AnimationDemo/blob/master/src/assets/owl.jpg?raw=true";
                     break;
                 default:
-                    url = "none";
+                    url = "";
             }
-            // let url = urlFunc();
-            // if (url !== "none") {
-            //     presentationBox.style.backgroundImage = `url('${url}')`
-            // }
+
+            images[i].classList.add("enlarge-image");
+            beds[i].classList.add("z-index-up");
+
             presentationBox.classList.add("present-image");
-            if (url !== "none") {
+            if (!presentationBox.style.backgroundImage) {
                 presentationBox.style.backgroundImage = `url('${url}')`;
+            } else {
+                presentationBox.style.backgroundImage = "";
             }
         })
+
         elements[i].addEventListener("mouseleave", (event) => {
-            presentationBox.style.backgroundImage = "none";
+            beds[i].classList.remove("z-index-up");
+            presentationBox.style.backgroundImage = "";
             presentationBox.classList.remove("present-image");
+            images[i].classList.remove("enlarge-image");
         })
     }
-
-
-
-        
-
     
 }

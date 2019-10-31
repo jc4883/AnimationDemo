@@ -40,8 +40,9 @@ body {
     height: 100vh;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
-    
+
     > .scroll-point {
+        margin-left: 0 !important;
         scroll-snap-align: start;
         height: 98vh;
         &:nth-of-type(1) {
