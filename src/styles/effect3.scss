@@ -135,6 +135,8 @@ $letter-spacing: 2px;
     nav, #main {
         /* triggers when transform value is different */
         transition: transform 150ms ease-out;
+
+
     }
 
     nav {
@@ -225,7 +227,16 @@ $letter-spacing: 2px;
             padding: 1em 4em;
             max-width: 680px;
             overflow: auto;
-            background-color:lightgreen;
+
+            height: fit-content;
+            overflow: auto;
+            color: tan;
+            border-radius: 5px;
+            background-color: rgba(72, 98, 60, .95);
+            outline: 2px solid tan;
+            outline-offset: -10px;
+
+
             > h1 {
                 font-weight: 800;
                 text-transform: uppercase;
