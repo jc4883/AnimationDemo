@@ -38,18 +38,18 @@ body {
 #scroll-effect {
     overflow: scroll;
     height: 100vh;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory; */
 
     > .scroll-point {
         margin-left: 0 !important;
-        scroll-snap-align: start;
+        /* scroll-snap-align: start; */
         height: 98vh;
         &:nth-of-type(1) {
             /* temporary solution to fix width not 100%*/
             /* margin-left: 6px; */
             /* temporary solution to fix width not 100%*/
-            background-color: lightblue;
+            background: linear-gradient(to bottom, lightblue, lightgreen);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -64,7 +64,7 @@ body {
             /* temporary solution to fix width not 100%*/
             /* margin-left: 6px; */
             /* temporary solution to fix width not 100%*/
-            background-color: rgb(239, 221, 255);
+            background: linear-gradient(to bottom, lightgreen, darkgreen) ;
         }
         &:nth-of-type(3) {
             /* temporary solution to fix width not 100%*/
