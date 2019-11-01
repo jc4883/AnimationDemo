@@ -30,7 +30,7 @@ body {
   overflow: scroll;
   height: 100vh;
   scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory; }
+   }
   #scroll-effect > .scroll-point {
     scroll-snap-align: start;
     height: 100vh; }
@@ -46,7 +46,7 @@ body {
       /* temporary solution to fix width not 100%*/
       margin-left: 6px;
       /* temporary solution to fix width not 100%*/
-      background-color: lightpink; }
+    }
     #scroll-effect > .scroll-point:nth-of-type(3) {
       /* temporary solution to fix width not 100%*/
       /* margin-left: 6px; */

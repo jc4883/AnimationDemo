@@ -4,10 +4,12 @@ export const effect2 = () => {
     const images = document.querySelectorAll(".grid-wrapper-effect2 > section > div");
     const presentationBox = document.querySelector(".image-div");
     const beds = document.querySelectorAll(".bed");
+    const section = document.getElementById("effect-2");
+
     for (let i = 0; i < elements.length; i++) {
         elements[i].addEventListener("mouseover", (event) => {
             event.target.style.backgroundColor = "black";
-            console.log("here")
+            section.classList.add("blur");
             let url;
             switch (i) {
                 case 0:
@@ -64,6 +66,7 @@ export const effect2 = () => {
         })
 
         elements[i].addEventListener("mouseleave", (event) => {
+            section.classList.remove("blur");
             beds[i].classList.remove("z-index-up");
             presentationBox.style.backgroundImage = "";
             presentationBox.classList.remove("present-image");
