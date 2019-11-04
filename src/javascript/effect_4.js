@@ -1,10 +1,14 @@
 export const effect4 = () => {
-    const form = document.getElementById("formwrap");
-    // form.addEventListener("submit", () => {
-    //     window.location.href = "https://github.com/jc4883/AnimationDemo/blob/master/index.html";       
-    // })
-  form.addEventListener("submit", function(e) {
+  $(".menu-toggle").click(function(e) {
     e.preventDefault();
-    document.getElementById("hidden-a").click();
+    $("#sidebar-wrapper").toggleClass("active");
+    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
+    $(this).toggleClass("active");
+  });
+
+  $('#sidebar-wrapper .js-scroll-trigger').click(function() {
+    $("#sidebar-wrapper").removeClass("active");
+    $(".menu-toggle").removeClass("active");
+    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
   });
 }

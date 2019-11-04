@@ -51,8 +51,9 @@ export const effect2 = () => {
                 default:
                     url = "";
             }
-
+            console.log("enlarging image")
             images[i].classList.add("enlarge-image");
+            console.log("enlarged");
             beds[i].classList.add("z-index-up");
             window.setTimeout(() => {
                 beds[i].classList.remove("z-index-up");
@@ -70,7 +71,9 @@ export const effect2 = () => {
             beds[i].classList.remove("z-index-up");
             presentationBox.style.backgroundImage = "";
             presentationBox.classList.remove("present-image");
+            console.log("removing enlarging image");
             images[i].classList.remove("enlarge-image");
+            console.log("removed enlarge image");
         })
     }
     

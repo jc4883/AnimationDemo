@@ -252,11 +252,120 @@ world, are the ones who do.
                 </div>
             </div>
         </section>
-        <section class="scroll-point" id="effect-4">
-            <div class="container">
-                <!-- the jumbotron has a fixed width for each breakpoint because parent is class container, not container-fluid -->
+
+        <!-- Effect4 -->
+        <section class="wrapper scroll-point" id="effect-4">
+            <!-- Navigation -->
+            <a class="menu-toggle rounded" href="#">
+                <i class="fas fa-bars"></i>
+            </a>
+            <nav id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a class="js-scroll-trigger" href="#page-top"></a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="js-scroll-trigger" href="#page-top">Top</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="js-scroll-trigger" href="#about">About Me</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="js-scroll-trigger" href="#services">Skills</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="js-scroll-trigger" href="#call-to-action">Github and LinkedIn</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- sidebar old -->
+    <!-- <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Choose a DOM element!</h3>
+        </div>
+        <ul class="list-unstyled-components">
+            <p>Dummy Heading</p>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>Toggle Sidebar</span>
+                </button>
+
+            </div>
+        </nav>
+    </div>
+-->
+
+    
+<!-- <div class="container">
                 <nav class="navbar navbar-dark bg-dark d-flex">
-                    <!-- remove navbar-expand-lg to make hamburger menu appear for all sizes -->
                     <a href="#" class="navbar-brand">
                         <img class="d-inline-block align-top" width="30px" height="30px" src="https://github.com/jc4883/AnimationDemo/blob/master/src/assets/wall.png?raw=true">    
                         CSS Demo
@@ -308,7 +417,6 @@ world, are the ones who do.
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-4">
-                        <!-- margin bottom level 4 spacing -->
                         <div class="card mb-4">
                             <img class="card-img-top" src="https://github.com/jc4883/AnimationDemo/blob/master/src/assets/leaf.jpg?raw=true">
                             <div class="card-body text-center">
@@ -319,7 +427,6 @@ world, are the ones who do.
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4">
-                        <!-- margin bottom level 4 spacing -->
                         <div class="card mb-4">
                             <img class="card-img-top" src="https://github.com/jc4883/AnimationDemo/blob/master/src/assets/portrait.jpg?raw=true">
                             <div class="card-body text-center">
@@ -330,7 +437,6 @@ world, are the ones who do.
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4">
-                        <!-- margin bottom level 4 spacing -->
                         <div class="card mb-4">
                             <img class="card-img-top third-image" src="https://github.com/jc4883/AnimationDemo/blob/master/src/assets/rain_boi.jpg?raw=true">
                             <div class="card-body text-center">
@@ -369,21 +475,4 @@ world, are the ones who do.
  
 
                 
-            </div>
-        </section>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
-
-
-
+            </div> -->
