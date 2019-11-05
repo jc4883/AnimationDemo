@@ -97,21 +97,24 @@
     font-size: 2.25rem;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
     }
-
-    #mydiv {
+    /* draggable elements */
+    .draggable-card {
         position: absolute;
+        left: 40%;
+        top: 40%;
         background-color: #f1f1f1;
         border: 1px solid #d3d3d3;
         text-align: center;
 
-            #mydivheader {
+            #card-drag-icon {
+            width: 30px;
+            height: 30px;
             padding: 10px;
             cursor: move;
             z-index: 10;
             background-color: #2196F3;
             color: #fff;
             }
-
     }
 }
 

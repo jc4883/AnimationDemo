@@ -1,4 +1,5 @@
 export const effect4 = () => {
+  let mydivCount = 0;
   $(".menu-toggle").click((e) => {
     e.preventDefault();
     $("#sidebar-wrapper").toggleClass("active");
@@ -14,17 +15,22 @@ export const effect4 = () => {
 
   $('.card-create').click(() => {
     $("#effect-4").append(
-    "<div id='mydiv'>" + 
-    "<div id='mydivheader'>Click here to move</div>" + 
+    `<div class="draggable-card" id='mydiv-${mydivCount}'>` + 
+    "<div id='card-drag-icon'>Click here to move</div>" + 
       "<p>Move</p>" + 
       "<p>this</p>" + 
       "<p>DIV</p>" + 
     "</div>"); 
+    dragElement(document.getElementById(`mydiv-${mydivCount}`));
+    mydivCount++;
+  })
+}
 
 
-    dragElement(document.getElementById("mydiv"));
 
-    function dragElement(elmnt) {
+
+
+function dragElement(elmnt) {
       var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
       if (document.getElementById(elmnt.id + "header")) {
         // if present, the header is where you move the DIV from:
@@ -64,8 +70,3 @@ export const effect4 = () => {
         document.onmousemove = null;
       }
     }
-
-
-  })
-  
-}
