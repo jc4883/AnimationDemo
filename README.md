@@ -19,9 +19,24 @@ All four dropdowns make each subsequent element animate smoothly one after anoth
 (code snippet of li)
 
 Effect 2 - Grid Gallery
-The second effect 
+The second effect features a large center presentation box with 12 smaller thumbnails surround it. When a user hovers over  a thumbnail, the thumbnail animates and presents itself in the presentation box. It looks as follows: 
 
+(gif of demoing effect2)
 
+An interesting challenge was determining the area which would trigger/cancel the animation. I decided it would be most appropriate to create an invisible box which would never change dimensions and only serve as a reference for mouseenter and mouseleave JavaScript events. With the help of CSS Grid, I was able to align the visible DOM elements and the the invisible box by setting them to the same grid-template-area. Here is a code snippet of the entire grid which made placing photos/boxes in the right places a breeze:
+
+(code snippet of entire grid)
+
+Effect 3 - Perspective Side Bar
+The third effect is a side bar that shifts the perspective of the entire page. This is how it looks: 
+
+(gif of perspective side bar)
+
+The real trick to this effect was adjusting the perspective-origin and perspective properties on the body to create a 3D illusion. A code snippet demonstrating this is show below: 
+
+(code snippet of perspective origin and perspective)
+
+Effect 4 - 
 MVP	
   - showcase CSS skills through 3 unique examples: 
     - A dropdown menu that showcases animations and transitions
