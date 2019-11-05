@@ -14,9 +14,7 @@ body {
     font-weight: 900;
     letter-spacing: 2px;
     align-items: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border: 1px solid lightgrey;
+
     border-top: none;
     justify-content: space-between; }
     body .header > h1 {

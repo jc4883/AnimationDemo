@@ -16,7 +16,6 @@ export const effect1 = () => {
 
 
     menu1.addEventListener("mouseover", () => {
-        debugger
         document.getElementById("effect-1").classList.add("remove-left-border-radius");
     })
     menu1.addEventListener("mouseout", () => {

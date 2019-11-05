@@ -3,6 +3,10 @@ body {
     margin: 0;
     overflow: hidden;
     .header {
+        border: 1px white solid;
+        border-top: none;
+        background-color: rgba($color: #9fdfcd, $alpha: 1.0);
+        color: white;
         position: sticky;
         top: 0;
         left: 0;
@@ -15,10 +19,6 @@ body {
         font-weight: 900;
         letter-spacing: 2px;
         align-items: center;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border: 1px solid lightgrey;
-        border-top: none;
         justify-content: space-between;
         > h1 {
             margin-left: 20px;
@@ -26,6 +26,7 @@ body {
             font-size: 2rem;
         }
         > h2 {
+            margin-bottom: 0;
             margin-right: 20px;
             font-weight: 100;
             font-size: 23px;
@@ -72,7 +73,7 @@ body {
             /* background-color: lightgreen; */
         }
         &:nth-of-type(4) {
-            
+            background: linear-gradient(to bottom, lightgreen, lightblue);
         }
         
     }

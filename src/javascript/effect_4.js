@@ -25,8 +25,8 @@ export const effect4 = () => {
         `<div class="card-close-icon" id='card-close-icon-${currCount}'></div>` +
         "<img class='card-img-top' src='https://github.com/jc4883/AnimationDemo/blob/master/src/assets/leaf.jpg?raw=true'>" +
         "<div class='card-body text-center'>" + 
-          `<h5 class='card-title'>card-${currCount}</h5>` + 
-          "<a target='_blank' href='https://github.com/jc4883/AnimationDemo/blob/master/index.html' class='btn btn-primary'>See Code Now</a>" +
+          `<h5 class='card-title'>Card</h5>` + 
+          "<a target='_blank' href='https://github.com/jc4883/AnimationDemo/blob/master/index.html' class='btn btn-primary'>Button</a>" +
         "</div>" +
       "</div>"
     ); 
@@ -64,12 +64,12 @@ export const effect4 = () => {
         `<div id='rowElement-${currCount}header' class="rowElement-drag-icon"></div>` + 
         `<div id='rowElement-close-icon-${currCount}' class="rowElement-close-icon"></div>` +
         `<div id="here1" class="col-sm-12 col-md-8">` +
-            `<h3>An all-new design</h3>` +
-            `<p class="lead">The digital age is here. No longer will finding information be so slow.</p>` +
-            `<p>It's been years in the making. The Bootstrap Demo Search Engine is finally here. We want to see how you will use its unmatched simplicity, speed, and elegance. Now that its arrived,<strong> how will you change the world?</strong></p>` +
+            `<h3>Bootstrap Row Element</h3>` +
+            `<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet, augue a ultricies consequat, dolor.</p>` +
+            `<p><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipiscing elit. <strong>Donec odio dolor,</strong> tincidunt sed consequat id, viverra ultrices risus. Phasellus ac congue metus. Maecenas ex sem.</p>` +
         `</div>` +
         `<div id="here2" class="col-sm-12 col-md-4">` +
-            `<h3>Common Searches</h3>` +
+            `<h3>CSS Topics</h3>` +
             `<ul class="nav flex-column">` + 
                 `<li class="nav-items"> ` +
                     `<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" class="nav-link">Flexbox</a>` +

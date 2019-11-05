@@ -7,7 +7,7 @@
     z-index: 100;    
     display: inline-block;
     height: 32px;
-    background-color: hsl(1, 98%, 50%);
+    background-color: mediumseagreen;
     border-radius: 15px;
     box-shadow: 3px 5px 4px rgba(0,0,0,0.4);
 
@@ -133,7 +133,7 @@
             font-size: 15px;
             font-weight: 300;
             letter-spacing: 2px;
-            background-image: linear-gradient(to bottom, black, #353441);
+            background-image: linear-gradient(to bottom, #5edfff, #b2fcff);
             display: block;
             opacity: 0;
             @for $i from 1 through 11 {
@@ -176,7 +176,7 @@
             font-size: 15px;
             font-weight: 300;
             letter-spacing: 2px;
-            background-image: linear-gradient(to bottom, yellow, red);
+            background-image: linear-gradient(to bottom, #9fdfcd, #baabda);
             display: block;
             opacity: 0;
             @for $i from 1 through 8 {
