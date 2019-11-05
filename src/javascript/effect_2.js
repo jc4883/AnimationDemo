@@ -7,7 +7,8 @@ export const effect2 = () => {
     const section = document.getElementById("effect-2");
 
     for (let i = 0; i < elements.length; i++) {
-        elements[i].addEventListener("mouseover", (event) => {
+        elements[i].addEventListener("mouseenter", (event) => {
+            console.log("here");
             event.target.style.backgroundColor = "black";
             section.classList.add("blur");
             let url;
