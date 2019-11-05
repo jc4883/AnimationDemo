@@ -15,18 +15,29 @@ export const effect4 = () => {
 
   $('.card-create').click(() => {
     $("#effect-4").append(
-    `<div class="draggable-card" id='mydiv-${mydivCount}'>` + 
-    "<div id='card-drag-icon'>Click here to move</div>" + 
-      "<p>Move</p>" + 
-      "<p>this</p>" + 
-      "<p>DIV</p>" + 
-    "</div>"); 
-    dragElement(document.getElementById(`mydiv-${mydivCount}`));
+      `<div id='card-${mydivCount}' class='draggable-card card mb-4'>` + 
+        "<div id='card-drag-icon'></div>" + 
+        "<div id='card-close-icon'></div>"
+        "<img class='card-img-top' src='https://github.com/jc4883/AnimationDemo/blob/master/src/assets/leaf.jpg?raw=true'>" +
+        "<div class='card-body text-center'>" + 
+          `<h5 class='card-title'>card-${mydivCount}</h5>` + 
+          "<a target='_blank' href='https://github.com/jc4883/AnimationDemo/blob/master/index.html' class='btn btn-primary'>See Code Now</a>" +
+        "</div>" +
+      "</div>"
+    ); 
+    dragElement(document.getElementById(`card-${mydivCount}`));
     mydivCount++;
   })
 }
 
-
+/*
+   `<div class="draggable-card" id='mydiv-${mydivCount}'>` + 
+    "<div id='card-drag-icon'>Click here to move</div>" + 
+      "<p>Move</p>" + 
+      "<p>this</p>" + 
+      "<p>DIV</p>" + 
+    "</div>"
+*/
 
 
 
