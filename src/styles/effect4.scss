@@ -97,7 +97,57 @@
     font-size: 2.25rem;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
     }
+
+    /* icons */
+
+    .card-drag-icon {
+        top:0;
+        position: absolute;
+        background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/drag_icon.png?raw=true");
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        cursor: move;
+        z-index: 10;
+        color: #fff;
+    }
+    .card-close-icon {
+        top: 0;
+        background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/close_icon.png?raw=true");
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+    }
+
+    .rowElement-close-icon {
+        top: -20px;
+        background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/close_icon.png?raw=true");
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+    }
+
+    .rowElement-drag-icon {
+        top: -20px;
+        position: absolute;
+        background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/drag_icon.png?raw=true");
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        cursor: move;
+        z-index: 10;
+        color: #fff;
+    }
+
+
     /* draggable elements */
+
     .draggable-card {
         position: absolute;
         left: 40%;
@@ -107,21 +157,22 @@
         text-align: center;
         width: 30vh;
         height: auto;
+    }
 
-            #card-drag-icon {
-                position: absolute;
-                background-image: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/drag_icon.png?raw=true");
-                background-size: cover;
-                width: 30px;
-                height: 30px;
-                padding: 10px;
-                cursor: move;
-                z-index: 10;
-                color: #fff;
-            }
-            #card-close-icon {
-                
-            }
+    .draggable-jumbotron {
+        position: absolute;
+        width: 80%;
+        left: 40%;
+        top: 40%;
+    }
+
+    .draggable-rowElement {
+        display: flex;
+        position: absolute;
+        width: 80%;
+        left: 20%;
+        top: 40%;
+        height: 250px;
     }
 }
 
