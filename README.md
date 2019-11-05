@@ -36,38 +36,15 @@ The real trick to this effect was adjusting the perspective-origin and perspecti
 
 (code snippet of perspective origin and perspective)
 
-Effect 4 - 
-MVP	
-  - showcase CSS skills through 3 unique examples: 
-    - A dropdown menu that showcases animations and transitions
-    - A hover effect that showcases SCSS tricks and syntax.
-    - A scroll effect that unfolds an animation when the user scrolls down.
-  
+Effect 4 - Interactive Website Builder
 
-  
-Technologies 
-  - vanilla javascript, SCSS, html
+This effect features a sidebar that has four pre-built DOM elements that are appended to the page when clicked. Here is a gif of it in action:
 
-Filestructure
-  - src
-    - javascript
-      - dropdown.js
-      - hover.js
-      - scroll.js
-    - styles
-      - _layout.scss
-      - dropdown.scss
-      - hover.scss  
-      - scroll.scss
-      - main.scss
-  - index.html
-  - package.json
-  - webpack.common.js
-  - webpack.dev.js
-  - webpack.prod.js
- 
-Implementation Timeline
-  - Implement Dropdown Menu	
-  - Implement Hover Effect
-  - Implement Scroll Effect
-  - Style rest of webpage, deploy webpage.
+(gif of effect4 demo)
+
+The most challenging part of designing this effect was assigning the dragging and closing to the correct elements. These concerns were solved by interpolating a counter value to create an element with a unique id every time. The implementation is shown below:
+
+(code snippet of effect 4)
+
+
+Thanks's for checking out CSS Demo! To see more of my work, check out my portolio: https://jc4883.github.io/ or feel free to dig through my Github repositories. You can also find me on LinkedIn: https://www.linkedin.com/in/peterchoi24/
