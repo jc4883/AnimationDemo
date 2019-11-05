@@ -4,15 +4,14 @@
     /* Side Menu */
     #sidebar-wrapper {
         z-index: 2;
-        right: 0;
-        /* width: 250px; */
+        left: -255px;
         height: 100%;
         transition: all 0.4s ease 0s;
-        transform: translateX(-250px);
         background: #1D809F;
         border-left: 1px solid rgba(255, 255, 255, 0.1);
         right: 250px;
         width: 250px;
+        position: absolute;
     }
 
     .sidebar-nav {
@@ -64,7 +63,7 @@
     right: 250px;
     width: 250px;
     transition: all 0.4s ease 0s;
-    transform: none;
+    left:0;
     }
 
     .menu-toggle {
@@ -98,7 +97,24 @@
     font-size: 2.25rem;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
     }
+
+    #mydiv {
+        position: absolute;
+        background-color: #f1f1f1;
+        border: 1px solid #d3d3d3;
+        text-align: center;
+
+            #mydivheader {
+            padding: 10px;
+            cursor: move;
+            z-index: 10;
+            background-color: #2196F3;
+            color: #fff;
+            }
+
+    }
 }
+
 
 
 
