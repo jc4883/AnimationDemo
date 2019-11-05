@@ -44,9 +44,9 @@ export const effect4 = () => {
         `<div id='jumbotron-${currCount}header' class="card-drag-icon"></div>` + 
         `<div id='jumbotron-close-icon-${currCount}' class="card-close-icon"></div>` +
         `<h1 class="display-4>Jumbotron ${currCount}</h1>` +
-        '<p class="lead">This is a  leading paragraph</p>' +
+        '<p class="lead">This is a Jumbotron</p>' +
         '<p class="lead">' +
-          '<a target="_blank" href="https://github.com/jc4883/AnimationDemo/blob/master/index.html" class="btn btn-danger btn-lg">See Code Now</a>' + 
+          '<a target="_blank" href="https://github.com/jc4883/AnimationDemo/blob/master/index.html" class="btn btn-danger btn-lg">Button</a>' + 
         '</p>' +
       `</div>`
     );
@@ -97,9 +97,9 @@ export const effect4 = () => {
   let currCount = dogoCount;
   dogoCount++;
   $('#effect-4').append(
-    `<div id='dogo-${currCount}' class="draggable-jumbotron jumbotron">` + 
-      `<div id='dogo-${currCount}header' class="card-drag-icon"></div>` + 
-      `<div id='dogo-close-icon-${currCount}' class="card-close-icon"></div>` +
+    `<div id='dogo-${currCount}' class="draggable-dogo">` + 
+      `<div id='dogo-${currCount}header' class="rowElement-drag-icon"></div>` + 
+      `<div id='dogo-close-icon-${currCount}' class="rowElement-close-icon"></div>` +
       `<div class="dogo-background"></div>` + 
     `</div>`
   );
