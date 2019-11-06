@@ -1,15 +1,15 @@
 
 # CSS Demo
-Background
 
-CSS is a showcase of interesting effects using CSS, SCSS, Bootstrap, JavaScript, and jQuery. Exploring cutting edge CSS technologies, especially CSS Grid, CSS Flexbox, and keyframes, solidified my understanding of how to embed sturdy, practical page layouts and animations into my web applications.
+##Background
 
+CSS Demo is a showcase of interesting effects using CSS, SCSS, Bootstrap, JavaScript, and jQuery. Exploring some of these cutting edge technologies, particularly CSS Grid, CSS Flexbox, and keyframes, solidified my understanding of embedding sturdy, practical page layouts and animations into my web applications.
 
-Features
+##Features
 
 CSS Demo has four effects. 
 
-Effect 1 - Dropdown Menus
+###Effect 1 - Dropdown Menus
 The first is a collection of dropdown menus that exhibits unique dropping animations. They look as follows: 
 
 ![](effect1.gif)
@@ -18,7 +18,7 @@ All four dropdowns make each subsequent element animate smoothly one after anoth
 
 ![effect1](/effect1_code_snippet.jpg)
 
-Effect 2 - Grid Gallery
+###Effect 2 - Grid Gallery
 The second effect features a large center presentation box with 12 smaller thumbnails surround it. When a user hovers over  a thumbnail, the thumbnail animates and presents itself in the presentation box. It looks as follows: 
 
 ![](effect2.gif)
@@ -27,7 +27,7 @@ An interesting challenge was determining the area which would trigger/cancel the
 
 ![effect1](/effect2_code_snippet.jpg)
 
-Effect 3 - Perspective Side Bar
+###Effect 3 - Perspective Side Bar
 The third effect is a side bar that shifts the perspective of the entire page. This is how it looks: 
 
 ![](effect3.gif)
@@ -36,7 +36,7 @@ The real trick to this effect was adjusting the perspective-origin and perspecti
 
 ![effect1](/effect3_code_snippet.jpg)
 
-Effect 4 - Interactive Website Builder
+###Effect 4 - Interactive Website Builder
 
 This effect features a sidebar that has four pre-built DOM elements that are appended to the page when clicked. Here is a gif of it in action:
 
