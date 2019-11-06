@@ -16,7 +16,7 @@ The first is a collection of dropdown menus that exhibits unique dropping animat
 
 All four dropdowns make each subsequent element animate smoothly one after another. I achieved this by giving each element in the dropdown a unique delay, using an SCSS @for rule, depending on its nth-child() value. Here is a code snippet showing an "li" in the first dropdown menu.
 
-(code snippet of li)
+![effect1](/effect1_code_snippet.jpg)
 
 Effect 2 - Grid Gallery
 The second effect features a large center presentation box with 12 smaller thumbnails surround it. When a user hovers over  a thumbnail, the thumbnail animates and presents itself in the presentation box. It looks as follows: 
