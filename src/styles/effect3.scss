@@ -127,7 +127,7 @@ $letter-spacing: 2px;
 .body {
     font-family: $font-family;
     font-size: 12px;
-    perspective-origin: 0% 50%;
+    perspective-origin: 50% 0%;
     perspective: 800px;
     height: 100%;
     position: relative;
@@ -282,11 +282,9 @@ $letter-spacing: 2px;
     }
 
     #main.menu-active {
-        border-radius: 0.001px;
         transform: translateX(16em) rotateY(15deg);
     }
     #main.menu-hover {
-        border-radius: .001px;
         transform: translateX(1em) rotateY(1deg);
     }   
 
