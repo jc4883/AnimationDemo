@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
     effect2();
     effect3();
     effect4();
+    
 });
 
 

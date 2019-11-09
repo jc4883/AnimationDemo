@@ -7,7 +7,7 @@ export const effect1 = () => {
 
 
     scrollEffect.addEventListener("scroll", (e) => {
-        if (e.target.scrollTop > 375) {
+        if (e.target.scrollTop > 175) {
             effect1.classList.add("fixed");
         } else {
             effect1.classList.remove("fixed");
